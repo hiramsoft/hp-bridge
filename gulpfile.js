@@ -255,7 +255,7 @@ gulp.task('sizereport', function() {
 
 gulp.task('makezip', ['default'], shell.task([
     "cd dist && rm -f *.zip", // poor-man's zip-bomb protection
-    "cd dist && zip " + zipName + "." + version + ".zip " + "*"
+    "cd dist && zip -r " + zipName + "." + version + ".zip " + "*"
 ], {quiet : false}));
 
 ////////////////////////////////////////

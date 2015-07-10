@@ -2,6 +2,9 @@
 <head>
     <!--
     Hiram Pages Bridge
+    Includes custom, smaller version of AWS SDK with only S3
+
+    Designed for static-only websites
     <!-- build:versionString -->
     <!-- endbuild -->
     <!-- build:gitJsRevString -->
@@ -10,11 +13,8 @@
     -->
     <meta charset="UTF-8">
     <script data-hiram-protected="true">
-        // AWS SDK for JavaScript v2.1.33
-        // Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-        // License at https://sdk.amazonaws.com/js/BUNDLE_LICENSE.txt
 
-        //= include ./aws-sdk.min.js
+        //= include ../aws-sdk-s3.min.js
 
     </script>
 
@@ -30,7 +30,7 @@
         <!-- build:gitJsRevString -->
         <!-- endbuild -->
 
-        //= include ./bridge.js
+        //= include ../bridge.js
 
     </script>
 </head>
